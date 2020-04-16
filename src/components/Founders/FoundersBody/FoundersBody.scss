@@ -1,0 +1,51 @@
+@import "../../../styles/abstracts";
+
+.founders-body {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -5rem;
+  width: 95%;
+
+  &__title {
+  }
+
+  &__paragraph {
+    font-weight: 400;
+    width: 80%;
+    margin: 0 auto 4rem auto;
+  }
+}
+
+
+p.founders-body__paragraph.para-founder {
+  color: #000000;
+  font-family: DIN;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media(max-width:767px)
+{
+  p.founders-body__paragraph.para-founder
+  {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .founders-body__paragraph
+  {
+    width:100%;
+  }
+  .founder-card__media-subtitle
+  {
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    line-height: 1.3;
+    text-align: justify;
+  }
+}

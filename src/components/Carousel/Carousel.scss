@@ -1,0 +1,87 @@
+@import "../../styles/abstracts";
+section
+{
+  width: 100%;
+}
+.carousel {
+  margin: 6rem 0;
+  display: flex;
+
+  &__image {
+    width: 40rem;
+    height: 30rem;
+    background-color: red;
+    transition: all 0.3s ease;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3.5rem;
+
+    &--1 {
+      background-image: url("../../assets/images/programs/future.jpg");
+      // transform: translateX(50px);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(#320b54, 0.7),
+            rgba(#320b54, 0.2)
+          ),
+          url("../../assets/images/programs/future.jpg");
+        // transform: translate(50px, -20px);
+        z-index: 2;
+      }
+    }
+
+    &--2 {
+      background-image: url("../../assets/images/programs/events.jpg");
+      z-index: 1;
+      &:hover {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(#320b54, 0.7),
+            rgba(#320b54, 0.2)
+          ),
+          url("../../assets/images/programs/events.jpg");
+        z-index: 2;
+        // transform: translateY(-20px);
+        box-shadow: $product-shadow;
+      }
+    }
+
+    &--3 {
+      background-image: url("../../assets/images/programs/bootcamp.jpg");
+      // transform: translateX(-50px);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(#320b54, 0.7),
+            rgba(#320b54, 0.2)
+          ),
+          url("../../assets/images/programs/bootcamp.jpg");
+        // transform: translate(-50px, -20px);
+        z-index: 2;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+p.programs__paragraph
+{
+  width: 100%;
+}
+.carousel__image
+{
+  margin: 0 auto;
+}
+
+.carousel__image:hover {
+  transform: scale(1.1);
+}

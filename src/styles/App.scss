@@ -1,0 +1,266 @@
+html
+{
+  overflow-x: hidden;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+section {
+  padding: 6rem;
+}
+
+nav {
+  padding: 0 4rem;
+}
+
+@media(max-width:767px)
+{
+h2.products__title {
+  padding-top: 30px;
+}
+
+h2.programs__title {
+  padding-top: 30px;
+}
+h1.founders-body__title {
+  padding-top: 30px;
+}
+.blog
+{
+  margin-left: -15px !important;
+} 
+.blog-card__image {
+  width: 100%;
+  margin: 0 1rem 1rem 0 !important;
+}
+
+h2.blog__title.secondary-title
+{
+  padding-bottom: 40px;
+}
+.footer__item
+{
+  padding:0 !important;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: underline;
+}
+.footer__item:not(:last-child) {
+  border-right: transparent !important;
+}
+.footer {
+
+  padding-top: 15px;
+}
+.footer__ul
+{
+  margin: 0;
+  padding: 0;
+  display: block !important;
+  margin-left: -35px;
+}
+
+.blog-card:not(:last-child) {
+  margin-bottom: 3rem !important;
+}
+.team__left-container
+{
+  padding-right: 0 !important;
+}
+.team__left-container .team__paragraph
+{
+  padding-right: 4rem;
+}
+.team__left-container .team__paragraph {
+  margin-bottom: 4rem !important;
+}
+.main-button
+{
+  text-align: center;
+  margin: 0 auto;
+}
+
+}
+
+.header .form__phone-prefix
+{
+  color: #fff !important;
+}
+
+
+.slick-slide img {
+  display: block;
+  width: 83%;
+}
+p.para-customers {
+  color: rgba(0,0,0,0.59);
+  font-family: StMarie-Light;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 25px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+}
+
+.slick-next:before, .slick-prev:before {
+  font-size: 30px;
+  line-height: 1;
+  opacity: .75;
+  color: #000;
+  margin-left: -30px;
+}
+
+p.para-second {
+  color: #000000;
+  font-family: DIN;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 29px;
+  padding-bottom: 20px;
+}
+
+label.septator {
+  height: 1px;
+  width: 100%;
+  background: rgba(0,0,0,0.1);
+  padding-left: px;
+  margin-right: 87px;
+  margin-left: 16px;
+}
+.container-fluid.coin {
+  background-color: rgba(222,167,236,0.15);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.coin h3 {
+  color: #000000;
+  font-family: 'DINCond-Bold';
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+.img-person
+{
+  height: 55px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+p.para-product {
+  color: #A43C79;
+  font-family: 'StMarie-Regular';
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+}
+
+@media(min-width:768px)
+{
+  .container-fluid.coin .container {
+    max-width: 900px;
+}
+}
+
+img.imgproducts {
+  margin: 0 auto;
+  display: block;
+  height: 350px;
+  margin-top: 50px;
+}
+h1.haed-product {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+p.para-price {
+  color: rgba(0,0,0,0.5);
+  font-family: DINCond-Bold;
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 24px;
+}
+p.pa-pa-product {
+  color: #000000;
+  font-family: DIN;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 28px;
+  padding-top: 40px;
+}
+.product-card__number-input
+{
+  background-color: rgba(0,0,0,0.03);
+
+}
+
+button.add-bitton {
+  color: #901498;
+  font-family: "DIN 30640 Std";
+  font-size: 12px;
+  /* font-style: italic; */
+  letter-spacing: 2.5px;
+  line-height: 24px;
+  text-align: center;
+  background: transparent;
+  border: 1px solid #901498;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 40px;
+  margin-left: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+label.color-pink {color: #A43C79;font-weight: bold;}
+
+.bg-image-product
+{
+  background-image: url(../assets/images/products/product-1-background.png);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box {
+  width: 52px;
+  height: 52px;
+  background: #fff;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 52px;
+  color: #901498;
+  border: 1px solid #901498;
+  position: absolute;
+  right: 122px;
+  margin-top: 25px;
+}
+@media(max-width:767px)
+{
+  .bg-image-product
+{
+  background-image: url(../assets/images/products/product-1-background.png);
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box 
+{
+ right: 20px;
+}
+}

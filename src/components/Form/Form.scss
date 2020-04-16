@@ -1,0 +1,177 @@
+@import "../../styles/abstracts.scss";
+@import "../../styles/utils.scss";
+
+.form {
+  &__input-container {
+    &:not(:first-child) {
+      margin: 2.7rem 0;
+    }
+  }
+
+  &__label {
+    font-size: $label-font-size;
+    letter-spacing: 0.2rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  &__input {
+    font-size: $input-font-size;
+    color: $white;
+    width: 70%;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $white;
+    padding-bottom: 0.7rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $placeholder-color;
+    }
+  }
+
+  &__phone-container {
+    display: flex;
+    margin-bottom: 4rem;
+  }
+
+  &__phone-prefix {
+    width: 5rem;
+    height: 3.9rem;
+    color: $placeholder-color;
+
+    option {
+      color: black;
+    }
+  }
+
+  &__phone-input {
+    width: calc(73% - 6.8rem);
+    padding-left: 1.8rem;
+  }
+
+  /* Contact Page Form CSS */
+  &--contact-page {
+    color: $black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    align-items: center;
+
+    .form__input-container:not(:first-child) {
+      margin: 1rem 0;
+    }
+
+    .form__input-container:nth-child(6) {
+      align-self: baseline;
+    }
+
+    .form__input-container--submit {
+      grid-row: 5 / 6;
+      align-self: flex-end;
+      margin: 5rem 0 !important;
+    }
+
+    .form__input-container--textarea {
+      // grid-column: 1 / span 2;
+      align-self: flex-start;
+      margin-top: -0.5rem !important;
+    }
+
+    .form__textarea {
+      width: 95%;
+      height: 10rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &__form-input-active {
+      border-bottom: 1px solid $color-secondary !important;
+    }
+
+    .form__phone-prefix {
+      color: $placeholder-color-black !important;
+      width: 25% !important;
+    
+    }
+
+
+    #phone-number {
+      width: 60%;
+    }
+
+    .form__label {
+      color: $color-secondary;
+
+      &--textarea {
+        color: $placeholder-color-black;
+      }
+    }
+
+    .form__input {
+      border-bottom: 1px solid $placeholder-color-black;
+      color: $black;
+      width: 90%;
+
+      &::placeholder {
+        color: $placeholder-color-black;
+      }
+    }
+
+    &__submit {
+      background-color: transparent;
+      border: 1px solid $color-secondary;
+      border-radius: 10px;
+      padding: 1.5rem 5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      color: $color-secondary;
+      cursor: pointer;
+      font-weight: 700;
+      transition: all 0.3s ease;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: $light-shadow;
+      }
+    }
+  }
+}
+
+.form__phone-prefix
+{
+  height: 3.0rem;
+}
+.form__input
+{
+  font-size: 1.4rem;
+}
+.personal-contact
+{
+  margin: 5rem auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  left: 80px;
+}
+
+@media(max-width:767px)
+{
+  .contact__left-container {
+    /* padding: 0 5rem 0 5rem; */
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 5rem; */
+    padding-bottom: 40px;
+}
+}

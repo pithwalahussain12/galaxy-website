@@ -1,0 +1,127 @@
+@import "../../styles/abstracts.scss";
+
+.navigation {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  color: white;
+  padding: 5rem 7rem;
+  text-transform: uppercase;
+
+  &__ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: 12rem;
+  }
+
+  &__item {
+    list-style: none;
+    padding: 0;
+    color: $placeholder-color;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: $white;
+      a {
+        color: $white;
+      }
+    }
+
+    a {
+      color: $placeholder-color;
+      text-decoration: none;
+    }
+  }
+
+  &__btn {
+    color: $white !important;
+    text-decoration: none;
+    border: 1px solid $white;
+    padding: 1.5rem 4rem;
+    border-radius: 0.8rem;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+
+    &:hover {
+      background-color: $white;
+      color: $grey !important;
+    }
+  }
+}
+
+.custom-navbar {
+
+  position: absolute;
+  display: flex;
+  width: 100%;
+  color: #fff;
+  padding: 5rem 7rem;
+  text-transform: uppercase;
+  z-index: 10;
+}
+@media(max-width:767px)
+{
+  .custom-navbar {
+   
+    padding:20px;
+    background-color: #36003A;
+   
+}
+}
+a.nav-link.ady-p {
+  color: rgba(202, 169, 169, 0.5);
+  color: rgba(255,255,255,0.6);
+  font-family: "DIN";
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  line-height: 24px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+a.nav-link.login-ady {
+  color: #fff !important;
+  font-family: DIN;
+  font-size: 15px;
+  letter-spacing: 2.5px;
+  line-height: 24px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+@media(max-width:767px)
+{
+  .navbar-nav li {
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.navbar-nav li a.active {
+    border-bottom: none;
+}
+
+a.navigation__btn {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-left: 7px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+}
+}
+
+a.navigation__item.active {
+  padding: 0 0 1rem 0 !important;
+}
+
+a.navigation__item
+{
+  text-decoration: none !important;
+}

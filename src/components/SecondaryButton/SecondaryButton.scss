@@ -1,0 +1,28 @@
+@import "../../styles/abstracts";
+
+.secondary-button {
+  background-color: transparent;
+  border: 1px solid $color-secondary;
+  border-radius: 10px;
+  padding: 1.5rem 5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: $color-secondary;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $light-shadow;
+  }
+
+  &--grey {
+    border-color: $placeholder-color-black;
+    color: $placeholder-color-black;
+  }
+}

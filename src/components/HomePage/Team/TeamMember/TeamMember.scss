@@ -1,0 +1,88 @@
+@import "../../../../styles/abstracts";
+
+.team-member {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__quotation {
+    position: absolute;
+    top: 10px;
+    align-self: flex-start;
+  }
+
+  &__avatar-container {
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__bio {
+    width: 100%;
+    align-self: flex-start;
+    text-align: left;
+    z-index: 1;
+    margin-bottom: 2rem;
+  }
+
+  &__avatar {
+    width: 8rem;
+    margin-right: 2rem;
+  }
+
+  &__name {
+    text-align: left;
+    font-size: 1.3rem;
+
+    &--name {
+      color: $color-secondary;
+    }
+  }
+}
+
+@media(min-width:768px)
+{
+  .team__left-container {
+   
+    padding-left: 7rem;
+}
+}
+
+.team__left-container .team__title
+{
+  font-weight: bold;
+
+}
+.team__left-container .team__paragraph {
+  margin-bottom: 10rem;
+  color: #000000;
+  font-family: DIN;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+  padding-top: 25px;
+}
+.main-button
+{
+  font-weight: bold;
+}
+
+.team-member__bio {
+  width: 100%;
+  align-self: flex-start;
+  text-align: left;
+  z-index: 1;
+  margin-bottom: 2rem;
+  color: rgba(0,0,0,0.85);
+  font-family: StMarie-Regular;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25px;
+  padding-right: 50px;
+}
+.team-member__name--name
+{
+  font-weight: bold;
+}

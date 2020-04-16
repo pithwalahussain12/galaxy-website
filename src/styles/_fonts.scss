@@ -1,0 +1,89 @@
+//@import url("//db.onlinewebfonts.com/c/1c615e4b617b24882e6860216a5010e6?family=StMarieW01-Light");
+
+@font-face {
+  font-family: "DIN";
+  font-style: normal;
+  font-weight: 200;
+  src: local("DIN-Light"), url("../fonts/DIN-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DIN";
+  font-style: normal;
+  font-weight: 300;
+  src: local("DIN-Regular"), url("../fonts/DIN-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DIN";
+  font-style: normal;
+  font-weight: 500;
+  src: local("DIN-Medium"), url("../fonts/DIN-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DIN";
+  font-style: normal;
+  font-weight: 700;
+  src: local("DIN-Bold"), url("../fonts/DIN-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DIN";
+  font-style: normal;
+  font-weight: 800;
+  src: local("DIN-Black"), url("../fonts/DIN-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DINCond";
+  font-style: normal;
+  font-weight: 300;
+  src: local("DINCond-Light"), url("../fonts/DINCond-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DINCond";
+  font-style: normal;
+  font-weight: 400;
+  src: local("DINCond-Medium"),
+    url("../fonts/DINCond-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DINCond";
+  font-style: normal;
+  font-weight: 700;
+  src: local("DINCond-Bold"), url("../fonts/DINCond-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DINCond";
+  font-style: normal;
+  font-weight: 800;
+  src: local("DINCond-Black"), url("../fonts/DINCond-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DIN 30640 Std Neuzeit Grotesk Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DIN 30640 Std Neuzeit Grotesk Light"),
+    url("../fonts/DINNeuzeitGroteskStdLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DIN 30640 Std Neuzeit Grotesk Bold Cond";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DIN 30640 Std Neuzeit Grotesk Bold Cond"),
+    url("../fonts/DINNeuzeitGroteskStdBdCond.woff") format("woff");
+}
+
+@font-face {
+  font-family: "StMarieW01-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("StMarieW01-Light"),
+    url("../fonts/StMarieW01-Light.woff") format("woff");
+}

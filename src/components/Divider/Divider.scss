@@ -1,0 +1,33 @@
+@import "../../styles/abstracts";
+
+.divider {
+  margin-bottom: 4rem;
+
+  &__hr {
+    color: $placeholder-color-black;
+    height: 1px;
+    background-color: $placeholder-color-black;
+    width: 100%;
+    margin-bottom: 0;
+    border: none;
+  }
+
+  &__tag {
+    color: $white;
+    width: max-content;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    margin-top: 0;
+    transform: translateY(-1px);
+    text-transform: uppercase;
+
+    &--featured {
+      background-color: $color-secondary;
+    }
+
+    &--new {
+      background-color: $black;
+    }
+  }
+}

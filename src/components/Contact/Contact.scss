@@ -1,0 +1,78 @@
+@import "../../styles/abstracts";
+
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  justify-content: center;
+
+  &__left-container {
+    padding: 0 5rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+  }
+
+  &__right-container {
+  }
+
+  &__title {
+    color: $color-secondary;
+    align-self: flex-start;
+    text-decoration: underline;
+    font-family: StMarie-Regular;
+    font-size: 45px;
+  }
+
+  &__contacts-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: -14rem;
+    transform: translateY(-50%);
+  }
+
+  &__contacts-paragraph {
+    color: $placeholder-color-black;
+  }
+
+  + .programs {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+.contact__contacts-paragraph {
+  color: rgba(0, 0, 0, 0.4);
+  padding-top: 15px;
+  padding-bottom: 30px;
+  font-family: DIN;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 28px;
+
+}
+
+p.contact__intro {
+  color: #000000;
+  font-family: DIN;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+@media(max-width:767px)
+{
+  .contact__left-container
+  {
+  padding: 0;
+  padding-bottom: 40px;
+  }
+}
